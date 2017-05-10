@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.nicolas.moreaqui.MoreAquiActivity">
+
+    <TextView
+        android:id="@+id/tvMoreAqui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnNovo"
+        android:layout_alignStart="@+id/btnNovo"
+        android:layout_marginBottom="32dp"
+        android:text="@string/tvMoreAqui"
+        android:textAlignment="textStart"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnMapa"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="203dp"
+        android:text="@string/btnMapa"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnNovo"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnProcurar"
+        android:layout_alignStart="@+id/btnProcurar"
+        android:text="@string/btnNovo"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <Button
+        android:id="@+id/btnProcurar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnMapa"
+        android:layout_alignStart="@+id/btnMapa"
+        android:text="@string/btnProcurar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+</RelativeLayout>

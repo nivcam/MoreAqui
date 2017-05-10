@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.nicolas.moreaqui.InsertActivity"
+    android:weightSum="1">
+
+
+    <TextView
+        android:id="@+id/tvFone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tvFone" />
+
+    <EditText
+        android:id="@+id/etFone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/tvEspaco"
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="159dp"
+        tools:ignore="InefficientWeight"
+        android:layout_weight="0.01">
+
+        <TextView
+            android:id="@+id/tvTipo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/radioGroup2"
+            android:text="@string/tvTipo" />
+
+        <TextView
+            android:id="@+id/tvTam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/radioGroup3"
+            android:text="@string/tvTam" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/tvTipo">
+
+            <RadioButton
+                android:id="@+id/rbCasa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rbCasa" />
+
+            <RadioButton
+                android:id="@+id/rbAp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rbAp" />
+
+            <RadioButton
+                android:id="@+id/rbLoja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rbLoja" />
+
+            <RadioButton
+                android:id="@+id/rbNsTipo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/rbNs" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radioGroup3"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tvTam"
+            android:layout_alignBottom="@+id/radioGroup2">
+
+            <RadioButton
+                android:id="@+id/rbPq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rbPq" />
+
+            <RadioButton
+                android:id="@+id/rbMd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rbMd" />
+
+            <RadioButton
+                android:id="@+id/rbGrd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rbGrd" />
+
+            <RadioButton
+                android:id="@+id/rbNsTam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/rbNs" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <CheckBox
+        android:id="@+id/chkConstrucao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="@string/chkConstrucao" />
+
+    <Button
+        android:id="@+id/btnPronto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="@string/btnPronto" />
+
+</LinearLayout>
