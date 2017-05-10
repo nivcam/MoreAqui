@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MoreAquiActivity extends AppCompatActivity {
     private Button btnNovo;
@@ -24,6 +25,18 @@ public class MoreAquiActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent it = new Intent(MoreAquiActivity.this, InsertActivity.class);
                 startActivity(it);
+            }
+        });
+        btnProcurar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Não Implementado Ainda.", Toast.LENGTH_SHORT).show();
+            }
+        });
+        btnMapa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Não Implementado Ainda.", Toast.LENGTH_SHORT).show();
             }
         });
     }

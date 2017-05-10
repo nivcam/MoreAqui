@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/fundo1"
     tools:context="com.example.nicolas.moreaqui.InsertActivity"
     android:weightSum="1">
 
@@ -13,19 +13,24 @@
         android:id="@+id/tvFone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/tvFone" />
+        android:text="@string/tvFone"
+        android:textColor="@android:color/background_light" />
 
     <EditText
         android:id="@+id/etFone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        tools:ignore="LabelFor" />
+        android:textColor="#ff00ddff"
+        android:textColorHint="#ff00ddff"
+        tools:ignore="LabelFor"
+        android:inputType="" />
 
     <TextView
         android:id="@+id/tvEspaco"
         android:layout_width="match_parent"
-        android:layout_height="20dp" />
+        android:layout_height="20dp"
+        android:textColor="#ff00ddff" />
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -38,19 +43,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_alignStart="@+id/radioGroup2"
-            android:text="@string/tvTipo" />
+            android:layout_alignStart="@+id/rg2"
+            android:text="@string/tvTipo"
+            android:textColor="#ff00ddff" />
 
         <TextView
             android:id="@+id/tvTam"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_alignStart="@+id/radioGroup3"
-            android:text="@string/tvTam" />
+            android:layout_alignStart="@+id/rg1"
+            android:text="@string/tvTam"
+            android:textColor="#ff00ddff" />
 
         <RadioGroup
-            android:id="@+id/radioGroup2"
+            android:id="@+id/rg2"
             android:layout_width="190dp"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
@@ -60,61 +67,77 @@
                 android:id="@+id/rbCasa"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/rbCasa" />
+                android:text="@string/rbCasa"
+                android:textColor="@android:color/background_light"
+                android:buttonTint="@android:color/holo_blue_bright" />
 
             <RadioButton
                 android:id="@+id/rbAp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/rbAp" />
+                android:text="@string/rbAp"
+                android:textColor="@android:color/background_light"
+                android:buttonTint="@android:color/holo_blue_bright" />
 
             <RadioButton
                 android:id="@+id/rbLoja"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/rbLoja" />
+                android:text="@string/rbLoja"
+                android:textColor="@android:color/background_light"
+                android:buttonTint="@android:color/holo_blue_bright" />
 
             <RadioButton
                 android:id="@+id/rbNsTipo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/rbNs" />
+                android:text="@string/rbNs"
+                android:textColor="@android:color/background_light"
+                android:buttonTint="@android:color/holo_blue_bright" />
 
         </RadioGroup>
 
         <RadioGroup
-            android:id="@+id/radioGroup3"
+            android:id="@+id/rg1"
             android:layout_width="190dp"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_below="@+id/tvTam"
-            android:layout_alignBottom="@+id/radioGroup2">
+            android:layout_alignBottom="@+id/rg2">
 
             <RadioButton
                 android:id="@+id/rbPq"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/rbPq" />
+                android:text="@string/rbPq"
+                android:textColor="@android:color/background_light"
+                android:buttonTint="@android:color/holo_blue_bright" />
 
             <RadioButton
                 android:id="@+id/rbMd"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/rbMd" />
+                android:text="@string/rbMd"
+                android:textColor="@android:color/background_light"
+                android:buttonTint="@android:color/holo_blue_bright" />
 
             <RadioButton
                 android:id="@+id/rbGrd"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/rbGrd" />
+                android:text="@string/rbGrd"
+                android:textColor="@android:color/background_light"
+                android:buttonTint="@android:color/holo_blue_bright" />
 
             <RadioButton
                 android:id="@+id/rbNsTam"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/rbNs" />
+                android:text="@string/rbNs"
+                android:textColor="@android:color/background_light"
+                android:buttonTint="@android:color/holo_blue_bright" />
         </RadioGroup>
     </RelativeLayout>
 
@@ -123,13 +146,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="17dp"
-        android:text="@string/chkConstrucao" />
+        android:text="@string/chkConstrucao"
+        android:textColor="@android:color/background_light"
+        android:buttonTint="@android:color/holo_blue_bright" />
 
     <Button
         android:id="@+id/btnPronto"
+        style="@android:style/Widget.Holo.Light.Button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="18dp"
-        android:text="@string/btnPronto" />
+        android:text="@string/btnPronto"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textStyle="bold" />
 
 </LinearLayout>
