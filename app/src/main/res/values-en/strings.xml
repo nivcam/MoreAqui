@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">More Here</string>
+    <string name="tvMoreAqui">More Here</string>
+    <string name="btnNovo">New</string>
+    <string name="btnProcurar">Search</string>
+    <string name="btnMapa">Map</string>
+    <string name="tvFone">Phone:</string>
+    <string name="tvTam">Size:</string>
+    <string name="tvTipo">Kind:</string>
+    <string name="rbPq">Little</string>
+    <string name="rbMd">Medium</string>
+    <string name="rbGrd">Big</string>
+    <string name="rbNs">Do not know</string>
+    <string name="rbCasa">Home</string>
+    <string name="rbAp">Apartment</string>
+    <string name="rbLoja">Store</string>
+    <string name="chkConstrucao">Under construction</string>
+    <string name="btnPronto">Ready!</string>
+</resources>
