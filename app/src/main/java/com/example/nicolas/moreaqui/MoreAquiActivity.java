@@ -30,13 +30,16 @@ public class MoreAquiActivity extends AppCompatActivity {
         btnProcurar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "Não Implementado Ainda.", Toast.LENGTH_SHORT).show();
+                Intent it = new Intent(MoreAquiActivity.this, ProcurarActivity.class);
+                startActivity(it);
             }
         });
         btnMapa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "Não Implementado Ainda.", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getApplicationContext(), "Não Implementado Ainda.", Toast.LENGTH_SHORT).show();
+                Intent it = new Intent(MoreAquiActivity.this, MapaActivity.class);
+                startActivity(it);
             }
         });
     }
