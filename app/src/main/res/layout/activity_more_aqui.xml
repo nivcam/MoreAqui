@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/fundo1"
     tools:context="com.example.nicolas.moreaqui.MoreAquiActivity">
 
     <TextView
@@ -16,7 +15,6 @@
         android:layout_marginBottom="32dp"
         android:text="@string/tvMoreAqui"
         android:textAlignment="textStart"
-        android:textColor="@android:color/holo_blue_bright"
         android:textSize="30sp"
         android:textStyle="bold" />
 
@@ -30,7 +28,6 @@
         android:layout_marginBottom="203dp"
         android:text="@string/btnMapa"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textColor="@android:color/holo_blue_bright"
         android:textStyle="bold" />
 
     <Button
@@ -40,7 +37,6 @@
         android:layout_height="wrap_content"
         android:text="@string/btnNovo"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textColor="@android:color/holo_blue_bright"
         android:textStyle="bold"
         android:visibility="visible"
         android:layout_above="@+id/btnProcurar"
@@ -55,6 +51,5 @@
         android:layout_alignStart="@+id/btnMapa"
         android:text="@string/btnProcurar"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textColor="@android:color/holo_blue_bright"
         android:textStyle="bold" />
 </RelativeLayout>
